@@ -1,0 +1,11 @@
+<!-- templates/projects/project_detail.html -->
+{% extends 'projects/base.html' %}
+{% block title %}{{ object.title }}{% endblock %}
+{% block content %}
+    <h1>{{ object.title }}</h1>
+    <div class="carousel">
+        <!-- Carousel logic here for multiple images -->
+    </div>
+    <p>{{ object.description }}</p>
+    <a href="{{ object.project_url }}" class="btn">Visit Project</a>
+{% endblock %}
